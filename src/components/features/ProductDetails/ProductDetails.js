@@ -1,7 +1,9 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './ProductDetails.module.scss';
+import React from 'react';
+
 import ProductRating from '../ProductRating/ProductRatingContainer';
+
+import styles from './ProductDetails.module.scss';
 
 const ProductDetails = ({ id, stars, isStarred }) => {
   return (

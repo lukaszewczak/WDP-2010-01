@@ -1,10 +1,12 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './ProductPage.module.scss';
-import PageNotFound from '../../views/PageNotFound/PageNotFound';
+import React from 'react';
+
 import ProductDetails from '../../features/ProductDetails/ProductDetails';
-import ProductPageNavbar from '../../features/ProductPageNavbar/ProductPageNavbar';
 import ProductPageMainPage from '../../features/ProductPageMainPage/ProductPageMainPage';
+import ProductPageNavbar from '../../features/ProductPageNavbar/ProductPageNavbar';
+import PageNotFound from '../../views/PageNotFound/PageNotFound';
+
+import styles from './ProductPage.module.scss';
 
 const ProductPage = ({
   id,

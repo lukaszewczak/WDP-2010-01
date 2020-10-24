@@ -1,15 +1,17 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './ProductPageMainPage.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import PropTypes from 'prop-types';
+import React from 'react';
+
 import Button from '../../common/Button/Button';
 import ProductImages from '../../common/ProductImages/ProductImages';
-import ProductPageSocialMedia from '../ProductPageSocialMedia/ProductPageSocialMedia';
 import ProductPageActions from '../ProductPageActions/ProductPageActions';
+import ProductPageHeader from '../ProductPageHeader/ProductPageHeader';
 import ProductPageOverview from '../ProductPageOverview/ProductPageOverview';
 import ProductPagePrice from '../ProductPagePrice/ProductPagePrice';
-import ProductPageHeader from '../ProductPageHeader/ProductPageHeader';
+import ProductPageSocialMedia from '../ProductPageSocialMedia/ProductPageSocialMedia';
+
+import styles from './ProductPageMainPage.module.scss';
 
 const ProductPageMainPage = ({
   id,

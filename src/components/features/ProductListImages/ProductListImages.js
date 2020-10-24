@@ -1,5 +1,6 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
+
 import ProductBox from '../../common/ProductBox/ProductBoxContainer';
 
 const ProductListImages = ({ id, products, name }) => {
