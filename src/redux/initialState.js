@@ -61,7 +61,7 @@ const initialState = {
       newFurniture: true,
       heart: false,
       addCompare: false,
-      topSeller: true,
+      // topSeller: true,
     },
     {
       id: 'aenean-ru-bristique-2',
@@ -815,6 +815,7 @@ const initialState = {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
       availability: 'in Stock',
       newFurniture: true,
+      topRated: true,
     },
     {
       id: 'aenean-ru-bristique-54',
@@ -1319,7 +1320,16 @@ const initialState = {
     {
       id: 'How to design your space?',
       date: '15 JAN 2020',
-      comments: '4 comments',
+      comments: [
+        {
+          idComment: '1',
+          comment: 'comment1',
+        },
+        {
+          idComment: '2',
+          comment: 'comment2',
+        },
+      ],
       title: 'How to design your space?',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -1329,7 +1339,12 @@ const initialState = {
     {
       id: 'Six Tips for Choosing the Perfect Sofa',
       date: '12 JAN 2020',
-      comments: '4 comments',
+      comments: [
+        {
+          idComment: '1',
+          comment: 'comment1',
+        },
+      ],
       title: 'Six Tips for Choosing the Perfect Sofa',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -1339,7 +1354,20 @@ const initialState = {
     {
       id: 'Functional, Comfortable and Beautiful',
       date: '5 JAN 2020',
-      comments: '4 comments',
+      comments: [
+        {
+          idComment: '1',
+          comment: 'comment1',
+        },
+        {
+          idComment: '2',
+          comment: 'comment2',
+        },
+        {
+          idComment: '3',
+          comment: 'comment3',
+        },
+      ],
       title: 'Functional, Comfortable and Beautiful',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -1349,7 +1377,20 @@ const initialState = {
     {
       id: 'How To Choose A Mattress in 5 Easy Steps',
       date: '19 DEC 2019',
-      comments: '4 comments',
+      comments: [
+        {
+          idComment: '1',
+          comment: 'comment1',
+        },
+        {
+          idComment: '2',
+          comment: 'comment2',
+        },
+        {
+          idComment: '3',
+          comment: 'comment3',
+        },
+      ],
       title: 'How To Choose A Mattress in 5 Easy Steps',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -1368,6 +1409,13 @@ const initialState = {
     { id: 'Brand8', name: 'Brand8', image: 'https://i.postimg.cc/wThq18R5/16.jpg' },
     { id: 'Brand9', name: 'Brand9', image: 'https://i.postimg.cc/HLPHqTFm/17.jpg' },
     { id: 'Brand10', name: 'Brand10', image: 'https://i.postimg.cc/C5bgnk5M/18.jpg' },
+  ],
+  productCategories: [
+    { id: 'furniture', name: 'Furniture' },
+    { id: 'chair', name: 'Chair' },
+    { id: 'table', name: 'Table' },
+    { id: 'sofa', name: 'Sofa' },
+    { id: 'bedroom', name: 'Bedroom' },
   ],
   feedbacks: [
     {

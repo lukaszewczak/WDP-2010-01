@@ -5,7 +5,7 @@ import React from 'react';
 
 import styles from './ProductSearch.module.scss';
 
-const ProductSearch = () => (
+const ProductSearch = id => (
   <form action='' className={styles.root}>
     <div className={styles.category}>
       <FontAwesomeIcon className={styles.icon} icon={faListUl} />

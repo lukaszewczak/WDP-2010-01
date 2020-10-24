@@ -1,9 +1,9 @@
-import { faCalendar, faComment } from '@fortawesome/free-solid-svg-icons';
+import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
 import React from 'react';
-//import { Link } from 'react-router-dom';
 
+import CountComments from '../../features/CountComments/CountComments';
 import Button from '../Button/Button';
 
 import styles from './LastPost.module.scss';
@@ -21,9 +21,7 @@ const LastPost = ({ id, date, comments, title, description, image }) => (
           </p>
         </div>
         <div className='col-6'>
-          <p>
-            <FontAwesomeIcon icon={faComment}></FontAwesomeIcon> {comments}
-          </p>
+          <CountComments comments={comments} />
         </div>
       </div>
       <h4>
