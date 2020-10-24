@@ -6,7 +6,7 @@ import categoriesReducer from './categoriesRedux';
 import compareProductsReducer from './compareRedux';
 import galleryReducer from './galleryRedux';
 import initialState from './initialState';
-//import postsReducer from './postsRedux';
+import postsReducer from './postsRedux';
 import productsReducer from './productsRedux';
 import viewportReducer from './viewportRedux';
 
@@ -19,7 +19,7 @@ const reducers = {
   viewport: viewportReducer,
   brands: brandsReducer,
   gallery: galleryReducer,
-  //posts: postsReducer,
+  posts: postsReducer,
 };
 
 // add blank reducers for initial state properties without reducers

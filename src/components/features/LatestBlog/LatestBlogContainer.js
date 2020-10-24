@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { getAllPosts } from '../../../redux/postsRedux ';
+import { getAllPosts } from '../../../redux/postsRedux';
 
 import LatestBlog from './LatestBlog';
 
