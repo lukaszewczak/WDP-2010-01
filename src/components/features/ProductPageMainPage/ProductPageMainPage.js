@@ -29,7 +29,7 @@ const ProductPageMainPage = ({
   category,
   images,
 }) => (
-  <div className='container'>
+  <div className={`container ${styles.box}`}>
     <div className={styles.product}>
       <div className='row'>
         <div className='col-sm-12 col-md-5'>
