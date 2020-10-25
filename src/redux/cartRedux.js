@@ -26,30 +26,29 @@ export default function reducer(statePart = [], action = {}) {
         (acc, product) => acc || product.id === action.payload.id,
         false
       );
-      const setTotalPrice = (statePart.totalPrice += action.payload.price);
+      const newTotalPrice = statePart.totalPrice + action.payload.price;
       const newStatePart = isInCart
-        ? statePart.products.filter(product => {
+        ? statePart.products.map(product => {
             if (product.id === action.payload.id) {
               if (product.quantity == null) {
                 product.quantity = 1;
               }
               product.quantity = product.quantity + 1;
             }
-            return [statePart.products];
           })
         : [...statePart.products, action.payload];
       return {
         products: newStatePart,
         isOpen: true,
-        totalPrice: setTotalPrice,
+        totalPrice: newTotalPrice,
       };
     }
     case REMOVE_FROM_CART: {
-      const setTotalPrice = statePart.totalPrice - action.payload.summaryPrice;
+      const newTotalPrice = statePart.totalPrice - action.payload.summaryPrice;
       return {
         ...statePart,
         products: statePart.products.filter(prod => prod.id !== action.payload.id),
-        totalPrice: setTotalPrice,
+        totalPrice: newTotalPrice,
       };
     }
     case TOGGLE_CART: {
@@ -60,27 +59,27 @@ export default function reducer(statePart = [], action = {}) {
     }
     case CHANGE_QUANTITY: {
       let newTotalPrice;
-      const newStatePart = statePart.products.filter(product => {
+      const newStatePart = statePart.products.map(product => {
         if (product.id === action.payload.id) {
           if (product.quantity == null) {
             product.quantity = 1;
           }
+
           if (action.payload.type === 'increase') {
             product.quantity = product.quantity + 1;
             newTotalPrice = statePart.totalPrice + product.price;
-            return [statePart.products];
           }
+
           if (action.payload.type === 'decrease') {
             if (product.quantity > 1) {
               newTotalPrice = statePart.totalPrice - product.price;
               product.quantity = product.quantity - 1;
-              return [statePart.products];
             } else {
               newTotalPrice = statePart.totalPrice;
             }
           }
         }
-        return [statePart.products];
+        return product;
       });
       return {
         products: newStatePart,

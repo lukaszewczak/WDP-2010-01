@@ -15,19 +15,14 @@ const CartMini = ({
   products,
 }) => {
   const removeFromCartHandler = (id, price, quantity) => {
-    const calcSummaryPrice = () => {
-      if (typeof quantity != 'undefined') {
-        return quantity * price;
-      } else {
-        return price;
-      }
-    };
-    const summaryPrice = calcSummaryPrice();
+    const summaryPrice = typeof quantity != 'undefined' ? quantity * price : price;
+
     removeFromCart({ id, price, summaryPrice });
-    products &&
-      products.length === 1 &&
-      closeCartHandler() &&
-      document.body.classList.add('slide');
+
+    if (products && products.length == 1) {
+      closeCartHandler();
+      document.body.classList.remove('slide');
+    }
   };
 
   const changeQuantityHandler = (id, type) => {
@@ -49,7 +44,7 @@ const CartMini = ({
         <div className={styles.title}>
           <p>Shopping bag</p>
         </div>
-        {products.length === 0 && (
+        {products && products.length === 0 && (
           <div className={styles.isEmpty}>
             <p>Your bag is currently empty.</p>
           </div>
@@ -64,12 +59,10 @@ const CartMini = ({
                 <div className={styles.productImg}>
                   <img src={product.image} alt={product.imageAlt} />
                 </div>
-
                 <div className={styles.productName}>
                   <p>{product.name}</p>
                   <span>${product.price}</span>
                 </div>
-
                 <div className={styles.productQuantity}>
                   <p>
                     <span
@@ -89,7 +82,6 @@ const CartMini = ({
                     </span>
                   </p>
                 </div>
-
                 <div
                   className={styles.productRemove}
                   onClick={() =>
