@@ -1,10 +1,11 @@
-import React from 'react';
+import { faTimes, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
+import React from 'react';
+
+import Button from '../../common/Button/Button';
 
 import styles from './CartMini.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
-import Button from '../../common/Button/Button';
 
 const CartMini = ({
   isOpen,
@@ -19,7 +20,7 @@ const CartMini = ({
 
     removeFromCart({ id, price, summaryPrice });
 
-    if (products && products.length == 1) {
+    if (products && products.length === 1) {
       closeCartHandler();
       document.body.classList.remove('slide');
     }

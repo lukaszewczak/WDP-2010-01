@@ -1,7 +1,8 @@
 import React from 'react';
-import TopBar from '../TopBar/TopBar';
+
 import CompanyClaim from '../CompanyClaim/CompanyClaimContainer';
 import MenuBar from '../MenuBar/MenuBar';
+import TopBar from '../TopBar/TopBar';
 
 const Header = () => (
   <header>
