@@ -1,8 +1,10 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
+
 import styles from './PromotedProduct.module.scss';
-import PromotedProductSlider from './PromotedProductSlider';
 import PromotedProductCarousel from './PromotedProductCarousel';
+import PromotedProductSlider from './PromotedProductSlider';
+import PromotedProductSwipe from './PromotedProductSwipe';
 
 const PromotedProduct = ({ hotDeal, promotedProduct }) => {
   return (
@@ -12,8 +14,11 @@ const PromotedProduct = ({ hotDeal, promotedProduct }) => {
           <div className='col-4'>
             <PromotedProductCarousel hotDeal={hotDeal} />
           </div>
-          <div className='col-8'>
+          <div className={`col-md-12 col-lg-8 ${styles.imagesLarge}`}>
             <PromotedProductSlider {...promotedProduct} />
+          </div>
+          <div className={`col-md-12 col-lg-8 ${styles.imagesMobile}`}>
+            <PromotedProductSwipe {...promotedProduct} />
           </div>
         </div>
       </div>
@@ -23,7 +28,7 @@ const PromotedProduct = ({ hotDeal, promotedProduct }) => {
 
 PromotedProduct.propTypes = {
   hotDeal: PropTypes.array.isRequired,
-  promotedProduct: PropTypes.bool.isRequired,
+  promotedProduct: PropTypes.object.isRequired,
 };
 
 export default PromotedProduct;

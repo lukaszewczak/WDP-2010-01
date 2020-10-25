@@ -1,9 +1,10 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 
-import styles from './ClientFeedback.module.scss';
 import Feedback from '../../common/Feedback/Feedback';
 import SwipeComponent from '../../common/SwipeComponent/SwipeComponent';
+
+import styles from './ClientFeedback.module.scss';
 
 class ClientFeedback extends React.Component {
   state = {
@@ -42,13 +43,13 @@ class ClientFeedback extends React.Component {
     const dots = [];
     for (let i = 0; i < pagesCount; i++) {
       dots.push(
-        <li>
-          <a
+        <li key={i}>
+          <button
             onClick={() => this.handlePageChange(i)}
-            className={i === activePage && styles.active}
+            className={i === activePage ? styles.active : ''}
           >
             page {i}
-          </a>
+          </button>
         </li>
       );
     }
@@ -96,7 +97,6 @@ class ClientFeedback extends React.Component {
 }
 
 ClientFeedback.propTypes = {
-  children: PropTypes.node.isRequired,
   feedbacks: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string,

@@ -61,7 +61,7 @@ const initialState = {
       newFurniture: true,
       heart: false,
       addCompare: false,
-      topSeller: true,
+      // topSeller: true,
     },
     {
       id: 'aenean-ru-bristique-2',
@@ -815,6 +815,7 @@ const initialState = {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
       availability: 'in Stock',
       newFurniture: true,
+      topRated: true,
     },
     {
       id: 'aenean-ru-bristique-54',
@@ -1234,6 +1235,7 @@ const initialState = {
       availability: 'in Stock',
       newFurniture: true,
       hotDeal: true,
+      promotedProductEndTime: '2020-11-20T14:48:17.261Z',
     },
     {
       id: 'aenean-ru-bristique-83',
@@ -1249,6 +1251,7 @@ const initialState = {
       availability: 'in Stock',
       newFurniture: true,
       hotDeal: true,
+      promotedProductEndTime: '2020-12-14T14:48:17.261Z',
     },
     {
       id: 'aenean-ru-bristique-84',
@@ -1265,6 +1268,157 @@ const initialState = {
       availability: 'in Stock',
       newFurniture: true,
       hotDeal: true,
+      promotedProductEndTime: '2020-09-20T12:48:17.261Z',
+    },
+    {
+      id: 'aenean-ru-bristique-84',
+      name: 'Aenean Ru Bristique 84',
+      category: 'furniture',
+      price: 30,
+      oldPrice: '$40',
+      stars: 2,
+      promo: 'sale',
+      image:
+        'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      availability: 'in Stock',
+      newFurniture: true,
+      hotDeal: true,
+    },
+    {
+      id: 'aenean-ru-bristique-72',
+      name: 'Aenean Ru Bristique 72',
+      category: 'furniture',
+      price: 30,
+      oldPrice: '$40',
+      stars: 2,
+      promo: 'sale',
+      image:
+        'https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      availability: 'in Stock',
+      newFurniture: true,
+    },
+    {
+      id: 'aenean-ru-bristique-72',
+      name: 'Aenean Ru Bristique 72',
+      category: 'furniture',
+      price: 30,
+      oldPrice: '$40',
+      stars: 2,
+      promo: 'sale',
+      image:
+        'https://images.unsplash.com/photo-1573866926487-a1865558a9cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      availability: 'in Stock',
+      newFurniture: true,
+    },
+    {
+      id: 'aenean-ru-bristique-72',
+      name: 'Aenean Ru Bristique 72',
+      category: 'furniture',
+      price: 30,
+      oldPrice: '$40',
+      stars: 3,
+      promo: 'sale',
+      image:
+        'https://images.unsplash.com/photo-1538688525198-9b88f6f53126?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      availability: 'in Stock',
+      newFurniture: true,
+    },
+    {
+      id: 'aenean-ru-bristique-72',
+      name: 'Aenean Ru Bristique 72',
+      category: 'furniture',
+      price: 30,
+      oldPrice: '$40',
+      stars: 3,
+      promo: 'sale',
+      image:
+        'https://images.unsplash.com/photo-1519710164239-da123dc03ef4?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      availability: 'in Stock',
+      newFurniture: true,
+    },
+    {
+      id: 'aenean-ru-bristique-72',
+      name: 'Aenean Ru Bristique 72',
+      category: 'furniture',
+      price: 30,
+      oldPrice: '$40',
+      stars: 3,
+      promo: 'sale',
+      image:
+        'https://images.unsplash.com/photo-1519643381401-22c77e60520e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      availability: 'in Stock',
+      newFurniture: true,
+    },
+    {
+      id: 'aenean-ru-bristique-72',
+      name: 'Aenean Ru Bristique 72',
+      category: 'bedroom',
+      price: 30,
+      oldPrice: '$40',
+      stars: 3,
+      promo: 'sale',
+      image:
+        'https://ksassets.timeincuk.net/wp/uploads/sites/56/2018/11/Take-a-tour-of-this-pretty-four-bedroom-Yorkshire-stone-detached-house-built-in-1921-bed.jpg',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      availability: 'in Stock',
+      newFurniture: true,
+    },
+    {
+      id: 'aenean-ru-bristique-72',
+      name: 'Aenean Ru Bristique 72',
+      category: 'bedroom',
+      price: 30,
+      oldPrice: '$40',
+      stars: 3,
+      promo: 'sale',
+      image:
+        'https://cdn.home-designing.com/wp-content/uploads/2019/07/modern-and-retro-accessory-ideas-for-transitional-bedroom-design-1024x717.jpg',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      availability: 'in Stock',
+      newFurniture: true,
+    },
+    {
+      id: 'aenean-ru-bristique-72',
+      name: 'Aenean Ru Bristique 72',
+      category: 'bedroom',
+      price: 30,
+      oldPrice: '$40',
+      stars: 3,
+      promo: 'sale',
+      image:
+        'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/romantic-bedrooms-pickart-vanatta-217x-1578085880.jpg?crop=1.00xw:0.844xh;0,0.143xh&resize=640:*',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      availability: 'in Stock',
+      newFurniture: true,
+    },
+    {
+      id: 'aenean-ru-bristique-72',
+      name: 'Aenean Ru Bristique 72',
+      category: 'bedroom',
+      price: 30,
+      oldPrice: '$40',
+      stars: 3,
+      promo: 'sale',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/0/0d/Bedroom_Mitcham.jpg',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      availability: 'in Stock',
+      newFurniture: true,
     },
   ],
   promotedProduct: {
@@ -1316,7 +1470,16 @@ const initialState = {
     {
       id: 'How to design your space?',
       date: '15 JAN 2020',
-      comments: '4 comments',
+      comments: [
+        {
+          idComment: '1',
+          comment: 'comment1',
+        },
+        {
+          idComment: '2',
+          comment: 'comment2',
+        },
+      ],
       title: 'How to design your space?',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -1326,7 +1489,12 @@ const initialState = {
     {
       id: 'Six Tips for Choosing the Perfect Sofa',
       date: '12 JAN 2020',
-      comments: '4 comments',
+      comments: [
+        {
+          idComment: '1',
+          comment: 'comment1',
+        },
+      ],
       title: 'Six Tips for Choosing the Perfect Sofa',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -1336,7 +1504,20 @@ const initialState = {
     {
       id: 'Functional, Comfortable and Beautiful',
       date: '5 JAN 2020',
-      comments: '4 comments',
+      comments: [
+        {
+          idComment: '1',
+          comment: 'comment1',
+        },
+        {
+          idComment: '2',
+          comment: 'comment2',
+        },
+        {
+          idComment: '3',
+          comment: 'comment3',
+        },
+      ],
       title: 'Functional, Comfortable and Beautiful',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -1346,7 +1527,20 @@ const initialState = {
     {
       id: 'How To Choose A Mattress in 5 Easy Steps',
       date: '19 DEC 2019',
-      comments: '4 comments',
+      comments: [
+        {
+          idComment: '1',
+          comment: 'comment1',
+        },
+        {
+          idComment: '2',
+          comment: 'comment2',
+        },
+        {
+          idComment: '3',
+          comment: 'comment3',
+        },
+      ],
       title: 'How To Choose A Mattress in 5 Easy Steps',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -1361,10 +1555,17 @@ const initialState = {
     { id: 'Brand4', name: 'Brand4', image: 'https://i.postimg.cc/rmP6Pg0w/9.jpg' },
     { id: 'Brand5', name: 'Brand5', image: 'https://i.postimg.cc/sg4gNdVf/10.jpg' },
     { id: 'Brand6', name: 'Brand6', image: 'https://i.postimg.cc/9MKm7cBb/12.jpg' },
-    // { id: 'Brand7', name: 'Brand7', image: 'https://i.postimg.cc/CLyMML5L/14.jpg' },
-    // { id: 'Brand8', name: 'Brand8', image: 'https://i.postimg.cc/wThq18R5/16.jpg' },
-    // { id: 'Brand9', name: 'Brand9', image: 'https://i.postimg.cc/HLPHqTFm/17.jpg' },
-    // { id: 'Brand10', name: 'Brand10', image: 'https://i.postimg.cc/C5bgnk5M/18.jpg' },
+    { id: 'Brand7', name: 'Brand7', image: 'https://i.postimg.cc/CLyMML5L/14.jpg' },
+    { id: 'Brand8', name: 'Brand8', image: 'https://i.postimg.cc/wThq18R5/16.jpg' },
+    { id: 'Brand9', name: 'Brand9', image: 'https://i.postimg.cc/HLPHqTFm/17.jpg' },
+    { id: 'Brand10', name: 'Brand10', image: 'https://i.postimg.cc/C5bgnk5M/18.jpg' },
+  ],
+  productCategories: [
+    { id: 'furniture', name: 'Furniture' },
+    { id: 'chair', name: 'Chair' },
+    { id: 'table', name: 'Table' },
+    { id: 'sofa', name: 'Sofa' },
+    { id: 'bedroom', name: 'Bedroom' },
   ],
   feedbacks: [
     {

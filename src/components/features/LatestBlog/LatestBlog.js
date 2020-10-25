@@ -1,9 +1,9 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-
-import styles from './LatestBlog.module.scss';
+import React from 'react';
 
 import LastPost from '../../common/LastPost/LastPost';
+
+import styles from './LatestBlog.module.scss';
 
 class LatestBlog extends React.Component {
   state = {
@@ -26,12 +26,12 @@ class LatestBlog extends React.Component {
     for (let i = 0; i < pagesCount; i++) {
       dots.push(
         <li key={i}>
-          <a
+          <button
             onClick={() => this.handlePageChange(i)}
-            className={i === activePage && styles.active}
+            className={i === activePage ? styles.active : ''}
           >
             page {i}
-          </a>
+          </button>
         </li>
       );
     }

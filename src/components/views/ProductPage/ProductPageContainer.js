@@ -1,12 +1,15 @@
 import { connect } from 'react-redux';
-import ProductPage from './ProductPage';
+
 import { setCompare, getCount } from '../../../redux/compareRedux';
 import { addToFavourite, getProductById } from '../../../redux/productsRedux';
+
+import ProductPage from './ProductPage';
 
 const mapStateToProps = (state, props) => {
   const product = getProductById(state, props.match.params.productId);
   return {
-    ...product,
+    product,
+    category: product.category,
     count: getCount(state),
     compare: state.compare,
   };

@@ -1,9 +1,11 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './NewFurniture.module.scss';
+import React from 'react';
+
 import ProductBox from '../../common/ProductBox/ProductBoxContainer';
-import ProductsCompare from '../ProductsCompare/ProductsCompareContainer';
 import SwipeComponent from '../../common/SwipeComponent/SwipeComponent';
+import ProductsCompare from '../ProductsCompare/ProductsCompareContainer';
+
+import styles from './NewFurniture.module.scss';
 
 class NewFurniture extends React.Component {
   state = {
@@ -51,10 +53,10 @@ class NewFurniture extends React.Component {
     const dots = [];
     for (let i = 0; i < pagesCount; i++) {
       dots.push(
-        <li>
+        <li key={i}>
           <div
             onClick={() => this.handlePageChange(i)}
-            className={i === activePage && styles.active}
+            className={i === activePage ? styles.active : ''}
           >
             page {i}
           </div>
@@ -65,7 +67,7 @@ class NewFurniture extends React.Component {
     const swipeContent = [];
     for (let page = 0; page < pagesCount; page++) {
       swipeContent.push(
-        <div className='row'>
+        <div key={page} className='row'>
           {categoryProducts
             .slice(activePage * itemsPerPage, (activePage + 1) * itemsPerPage)
             .map(item => (
@@ -76,7 +78,6 @@ class NewFurniture extends React.Component {
         </div>
       );
     }
-
     return (
       <div className={styles.root}>
         <div className='container'>
@@ -90,7 +91,7 @@ class NewFurniture extends React.Component {
                   {categories.map(item => (
                     <li key={item.id}>
                       <div
-                        className={item.id === activeCategory && styles.active}
+                        className={item.id === activeCategory ? styles.active : ''}
                         onClick={() => this.handleCategoryChange(item.id)}
                       >
                         {item.name}

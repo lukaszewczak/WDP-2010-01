@@ -1,4 +1,6 @@
+//import PropTypes from 'prop-types';
 import React from 'react';
+
 import styles from './BlogArticle.module.scss';
 //import LatestBlog from '../../features/LatestBlog/LatestBlog';
 
