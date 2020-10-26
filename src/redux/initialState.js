@@ -1482,7 +1482,16 @@ const initialState = {
     {
       id: 'How to design your space?',
       date: '15 JAN 2020',
-      comments: '4 comments',
+      comments: [
+        {
+          idComment: '1',
+          comment: 'comment1',
+        },
+        {
+          idComment: '2',
+          comment: 'comment2',
+        },
+      ],
       title: 'How to design your space?',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -1492,7 +1501,12 @@ const initialState = {
     {
       id: 'Six Tips for Choosing the Perfect Sofa',
       date: '12 JAN 2020',
-      comments: '4 comments',
+      comments: [
+        {
+          idComment: '1',
+          comment: 'comment1',
+        },
+      ],
       title: 'Six Tips for Choosing the Perfect Sofa',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -1502,7 +1516,20 @@ const initialState = {
     {
       id: 'Functional, Comfortable and Beautiful',
       date: '5 JAN 2020',
-      comments: '4 comments',
+      comments: [
+        {
+          idComment: '1',
+          comment: 'comment1',
+        },
+        {
+          idComment: '2',
+          comment: 'comment2',
+        },
+        {
+          idComment: '3',
+          comment: 'comment3',
+        },
+      ],
       title: 'Functional, Comfortable and Beautiful',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -1512,7 +1539,20 @@ const initialState = {
     {
       id: 'How To Choose A Mattress in 5 Easy Steps',
       date: '19 DEC 2019',
-      comments: '4 comments',
+      comments: [
+        {
+          idComment: '1',
+          comment: 'comment1',
+        },
+        {
+          idComment: '2',
+          comment: 'comment2',
+        },
+        {
+          idComment: '3',
+          comment: 'comment3',
+        },
+      ],
       title: 'How To Choose A Mattress in 5 Easy Steps',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -1567,6 +1607,8 @@ const initialState = {
     },
   ],
   cart: {
+    isOpen: false,
+    totalPrice: 0,
     products: [],
   },
   compare: {
