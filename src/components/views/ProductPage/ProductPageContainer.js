@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 
+import { addToCart } from '../../../redux/cartRedux';
 import { setCompare, getCount } from '../../../redux/compareRedux';
 import { addToFavourite, getProductById } from '../../../redux/productsRedux';
 
@@ -18,6 +19,7 @@ const mapStateToProps = (state, props) => {
 const mapDispatchToProps = dispatch => ({
   setCompare: value => dispatch(setCompare(value)),
   addToFavourite: value => dispatch(addToFavourite(value)),
+  addToCart: value => dispatch(addToCart(value)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProductPage);

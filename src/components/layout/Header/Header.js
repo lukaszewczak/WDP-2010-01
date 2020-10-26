@@ -1,20 +1,15 @@
-// import PropTypes from 'prop-types';
 import React from 'react';
 
-import CompanyClaim from '../CompanyClaim/CompanyClaim';
+import CompanyClaim from '../CompanyClaim/CompanyClaimContainer';
 import MenuBar from '../MenuBar/MenuBar';
 import TopBar from '../TopBar/TopBar';
 
-import styles from './Header.module.scss';
-
-const Header = props => (
-  <header className={styles.root}>
+const Header = () => (
+  <header>
     <TopBar />
     <CompanyClaim />
     <MenuBar />
   </header>
 );
-
-// Header.propTypes = {};
 
 export default Header;

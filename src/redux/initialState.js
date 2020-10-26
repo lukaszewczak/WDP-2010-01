@@ -1598,6 +1598,8 @@ const initialState = {
     },
   ],
   cart: {
+    isOpen: false,
+    totalPrice: 0,
     products: [],
   },
   compare: {

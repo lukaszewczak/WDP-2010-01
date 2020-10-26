@@ -1,10 +1,11 @@
 import React from 'react';
 
-import ProductListImages from '../../features/ProductListImages/ProductListImagesContainer';
 import ControlBar from '../../common/ControlBar/ControlBar';
-import styles from './ProductList.module.scss';
 import FilterByCategory from '../../common/FilterByCategory/FilterByCategoryContainer';
+import ProductListImages from '../../features/ProductListImages/ProductListImagesContainer';
 import PageNotFound from '../../views/PageNotFound/PageNotFound';
+
+import styles from './ProductList.module.scss';
 
 const ProductList = ({ error }) => {
   if (error) return <PageNotFound />;
