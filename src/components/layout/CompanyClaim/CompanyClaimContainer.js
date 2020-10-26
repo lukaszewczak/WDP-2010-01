@@ -1,6 +1,8 @@
 import { connect } from 'react-redux';
-import CompanyClaim from './CompanyClaim';
+
 import { toggleCart, getCount } from '../../../redux/cartRedux';
+
+import CompanyClaim from './CompanyClaim';
 
 const mapStateToProps = state => ({
   cartCount: getCount(state),
