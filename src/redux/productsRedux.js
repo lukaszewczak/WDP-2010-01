@@ -2,6 +2,23 @@
 export const getAll = ({ products }) => products;
 export const getCount = ({ products }) => products.length;
 
+export const getSorted = ({ products, sort }) => {
+  let output = products;
+  if (sort === 'priceUp') {
+    output = output.sort((a, b) => parseInt(b.cost) - parseInt(a.cost));
+  }
+  if (sort === 'priceDown') {
+    output = output.sort((a, b) => parseInt(a.cost) - parseInt(b.cost));
+  }
+  if (sort === 'starsUp') {
+    output = output.sort((a, b) => parseInt(b.stars) - parseInt(a.stars));
+  }
+  if (sort === 'starsDown') {
+    output = output.sort((a, b) => parseInt(a.stars) - parseInt(b.stars));
+  }
+  return output;
+};
+
 export const getNew = ({ products }) =>
   products.filter(item => item.newFurniture === true);
 
@@ -28,10 +45,12 @@ const createActionName = name => `products/${name}`;
 /* action types */
 export const SET_STARS = createActionName('SET_STARS');
 export const SET_FAVOURITE = createActionName('SET_FAVOURITE');
+export const SORT = createActionName('SORT');
 
 /* action creator */
 export const setStars = payload => ({ payload, type: SET_STARS });
 export const addToFavourite = payload => ({ payload, type: SET_FAVOURITE });
+export const setSortParams = payload => ({ payload, type: SORT });
 
 /* reducer */
 export default function reducer(statePart = [], action = {}) {
@@ -59,6 +78,11 @@ export default function reducer(statePart = [], action = {}) {
       });
       return newStatePart;
     }
+    case SORT:
+      return {
+        ...statePart,
+        sort: action.payload,
+      };
     default:
       return statePart;
   }

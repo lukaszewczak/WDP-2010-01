@@ -1257,7 +1257,7 @@ const initialState = {
       id: 'aenean-ru-bristique-84',
       name: 'Aenean Ru Bristique 84',
       category: 'dining',
-      price: 30,
+      price: 35,
       oldPrice: '$40',
       stars: 2,
       promo: 'sale',
@@ -1274,7 +1274,7 @@ const initialState = {
       id: 'aenean-ru-bristique-84',
       name: 'Aenean Ru Bristique 84',
       category: 'furniture',
-      price: 30,
+      price: 35,
       oldPrice: '$40',
       stars: 2,
       promo: 'sale',
@@ -1601,6 +1601,7 @@ const initialState = {
     products: [],
   },
   viewport: 'desktop',
+  sort: '',
 };
 
 export default initialState;
