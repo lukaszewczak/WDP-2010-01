@@ -1,7 +1,8 @@
-import React from 'react';
-import styles from './ControlBar.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThLarge, faThList } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
+
+import styles from './ControlBar.module.scss';
 
 const ControlBar = () => {
   return (

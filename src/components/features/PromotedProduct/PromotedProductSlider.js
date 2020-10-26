@@ -8,7 +8,6 @@ import Button from '../../common/Button/Button';
 
 import styles from './PromotedProduct.module.scss';
 
-
 const PromotedProductSlider = ({ images, title, spanTitle, subTitle, button }) => {
   const { slider, prevSlide, nextSlide, currentSlide } = useSlider();
   return (
