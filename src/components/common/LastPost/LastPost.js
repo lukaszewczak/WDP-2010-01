@@ -31,7 +31,6 @@ const LastPost = ({ id, date, comments, title, description, image }) => (
         <Button href={`/blog/${id}`} variant='medium'>
           Read more
         </Button>
-        Read more
       </div>
     </div>
   </div>
