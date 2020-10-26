@@ -66,6 +66,8 @@
     text-decoration: none;
     outline: none;
     @extend %hover-effect;
+    width: 100%;
+    background-color: $button-main-color;
 
     &.active,
     &:hover {
