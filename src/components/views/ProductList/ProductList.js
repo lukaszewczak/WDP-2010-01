@@ -2,6 +2,7 @@ import React from 'react';
 
 import ControlBar from '../../common/ControlBar/ControlBar';
 import FilterByCategory from '../../common/FilterByCategory/FilterByCategoryContainer';
+import FilterByColor from '../../common/FilterByColor/FilterByColorContainer';
 import ProductListImages from '../../features/ProductListImages/ProductListImagesContainer';
 import PageNotFound from '../../views/PageNotFound/PageNotFound';
 
@@ -24,6 +25,7 @@ const ProductList = ({ error }) => {
           </div>
           <div className='col-3'>
             <FilterByCategory />
+            <FilterByColor />
           </div>
         </div>
       </div>
