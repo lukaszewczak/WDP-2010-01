@@ -78,6 +78,7 @@ class NewFurniture extends React.Component {
         </div>
       );
     }
+
     return (
       <div className={styles.root}>
         <div className='container'>

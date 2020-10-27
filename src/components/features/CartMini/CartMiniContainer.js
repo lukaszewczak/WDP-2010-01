@@ -1,5 +1,4 @@
 import { connect } from 'react-redux';
-import CartMini from './CartMini';
 
 import {
   addToCart,
@@ -9,6 +8,8 @@ import {
   getCount,
   getAll,
 } from '../../../redux/cartRedux';
+
+import CartMini from './CartMini';
 
 const mapStateToProps = state => ({
   products: getAll(state),
