@@ -1,5 +1,6 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
+
 import styles from './FilterByColor.module.scss';
 
 const FilterByColor = ({ colors, activeColor }) => {
@@ -9,24 +10,20 @@ const FilterByColor = ({ colors, activeColor }) => {
         <span className={styles.title}>FILTER BY COLOR</span>
       </p>
       <div className={styles.borderLine}>
-        {colors.map(({ name }, index) => (
-          <div key={index}>
-            {activeColor === name ? (
-              <p className={styles.activeText}>
-                <span
-                  className={styles.colorBoxActive}
-                  style={{ background: name }}
-                ></span>
-                <span className={styles.fontDecoration}>{name}</span>
-              </p>
-            ) : (
-              <p className={styles.Text}>
-                <span className={styles.colorBox} style={{ background: name }}></span>
-                <span className={styles.fontDecoration}>{name}</span>
-              </p>
-            )}
-          </div>
-        ))}
+        {colors &&
+          colors.map(({ name }, index) => {
+            const activeStyle = activeColor === name ? styles.activeText : styles.text;
+            const activeBoxStyle =
+              activeColor === name ? styles.colorBoxActive : styles.colorBox;
+            return (
+              <div key={index}>
+                <p className={activeStyle}>
+                  <span className={activeBoxStyle} style={{ background: name }}></span>
+                  <span className={styles.fontDecoration}>{name}</span>
+                </p>
+              </div>
+            );
+          })}
       </div>
     </div>
   );
