@@ -326,3 +326,47 @@
   transition: all 1s ease-in-out;
   visibility: hidden;
 }
+
+@media (max-width: 992px) {
+  .root {
+    .leftPanel {
+      width: 100%;
+    }
+
+    .rightPanel {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 415px) {
+  .root {
+    .leftPanel {
+      width: 100%;
+    }
+
+    .rightPanel {
+      display: none;
+    }
+
+    .menu {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 321px) {
+  .root {
+    .leftPanel {
+      width: 100%;
+    }
+
+    .rightPanel {
+      display: none;
+    }
+
+    .menu {
+      font-size: 15px;
+    }
+  }
+}
